@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Номер" id="5">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="7"/>
+						</InputField>
+						<InputField name="Дата" id="8">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="10"/>
+						</InputField>
+						<UsualGroup name="ГруппаВРаботеГотово" id="80">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа в работе готово</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа в работе готово</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВРаботеГотовоРасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<CheckBoxField name="ВРаботе" id="11">
+									<DataPath>Объект.ВРаботе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВРаботеКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="ВРаботеРасширеннаяПодсказка" id="13"/>
+								</CheckBoxField>
+								<CheckBoxField name="Готово" id="17">
+									<DataPath>Объект.Готово</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ГотовоКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ГотовоРасширеннаяПодсказка" id="19"/>
+									<Events>
+										<Event name="OnChange">ГотовоПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Содержание" id="14">
+							<DataPath>Объект.Содержание</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СодержаниеКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="СодержаниеРасширеннаяПодсказка" id="16"/>
+						</InputField>
+						<InputField name="Заказчик" id="20">
+							<DataPath>Объект.Заказчик</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЗаказчикКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="22"/>
+						</InputField>
+						<InputField name="База" id="23">
+							<DataPath>Объект.База</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="БазаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="Приоритет" id="26">
+							<DataPath>Объект.Приоритет</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПриоритетКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="28"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<InputField name="ПланируемоеВремя" id="31">
+							<DataPath>Объект.ПланируемоеВремя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>true</DropListButton>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:decimal">0.25</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:decimal">0.5</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:decimal">4</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:decimal">8</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПланируемоеВремяКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ПланируемоеВремяРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="ПланируемаяДатаСдачи" id="34">
+							<DataPath>Объект.ПланируемаяДатаСдачи</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПланируемаяДатаСдачиКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ПланируемаяДатаСдачиРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="ФактическиЗатраченовеВремя" id="37">
+							<DataPath>Объект.ФактическиЗатраченовеВремя</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ФактическиЗатраченовеВремяКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ФактическиЗатраченовеВремяРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="ФактическаяДатаСдачи" id="40">
+							<DataPath>Объект.ФактическаяДатаСдачи</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ФактическаяДатаСдачиКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ФактическаяДатаСдачиРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="Решение" id="43">
+							<DataPath>Объект.Решение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РешениеКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="РешениеРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="Причина" id="46">
+							<DataPath>Объект.Причина</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПричинаКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ПричинаРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<InputField name="Исполнитель" id="52">
+							<DataPath>Объект.Исполнитель</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсполнительКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="54"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Время" id="55">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Время</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВремяКонтекстноеМеню" id="56"/>
+			<AutoCommandBar name="ВремяКоманднаяПанель" id="57"/>
+			<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="58"/>
+			<SearchStringAddition name="ВремяСтрокаПоиска" id="59">
+				<AdditionSource>
+					<Item>Время</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяСтрокаПоискаКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="ВремяСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВремяСостояниеПросмотра" id="62">
+				<AdditionSource>
+					<Item>Время</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяСостояниеПросмотраКонтекстноеМеню" id="63"/>
+				<ExtendedTooltip name="ВремяСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВремяУправлениеПоиском" id="65">
+				<AdditionSource>
+					<Item>Время</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВремяУправлениеПоискомКонтекстноеМеню" id="66"/>
+				<ExtendedTooltip name="ВремяУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnStartEdit">ВремяПриНачалеРедактирования</Event>
+				<Event name="OnChange">ВремяПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ВремяНомерСтроки" id="68">
+					<DataPath>Объект.Время.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Время.RowsCount</FooterDataPath>
+					<ContextMenu name="ВремяНомерСтрокиКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ВремяНомерСтрокиРасширеннаяПодсказка" id="70"/>
+				</LabelField>
+				<InputField name="ВремяДата" id="71">
+					<DataPath>Объект.Время.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяДатаКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ВремяДатаРасширеннаяПодсказка" id="73"/>
+					<Events>
+						<Event name="Creating">ВремяДатаСоздание</Event>
+					</Events>
+				</InputField>
+				<InputField name="ВремяЧасы" id="74">
+					<DataPath>Объект.Время.Часы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Время.TotalЧасы</FooterDataPath>
+					<DropListButton>true</DropListButton>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:decimal">0.25</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:decimal">0.5</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:decimal">4</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:decimal">8</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВремяЧасыКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ВремяЧасыРасширеннаяПодсказка" id="76"/>
+					<Events>
+						<Event name="OnChange">ВремяЧасыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ВремяКомментарий" id="77">
+					<DataPath>Объект.Время.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяКомментарийКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ВремяКомментарийРасширеннаяПодсказка" id="79"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Комментарий" id="49">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="51"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Задача</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сегодня1" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сегодня1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сегодня1</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+</Form>
