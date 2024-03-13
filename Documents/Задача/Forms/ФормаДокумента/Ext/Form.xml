@@ -84,6 +84,12 @@
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="Проект" id="82">
+							<DataPath>Объект.Проект</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПроектКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="84"/>
+						</InputField>
 						<InputField name="Содержание" id="14">
 							<DataPath>Объект.Содержание</DataPath>
 							<EditMode>EnterOnInput</EditMode>
@@ -278,6 +284,12 @@
 				</InputField>
 				<InputField name="ВремяЧасы" id="74">
 					<DataPath>Объект.Время.Часы</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>24 максимум</v8:content>
+						</v8:item>
+					</ToolTip>
 					<EditMode>EnterOnInput</EditMode>
 					<FooterDataPath>Объект.Время.TotalЧасы</FooterDataPath>
 					<DropListButton>true</DropListButton>

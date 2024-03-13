@@ -66,11 +66,12 @@
 			<Subsystem>miniITIL</Subsystem>
 			<Role>MiniITIL_Администратор</Role>
 			<Role>MiniITIL_Пользователь</Role>
-			<Role>Mini_ITIL_Просмотр</Role>
-			<Catalog>Заказчик</Catalog>
+			<Role>MiniITIL_Просмотр</Role>
 			<Catalog>База</Catalog>
+			<Catalog>Заказчик</Catalog>
 			<Catalog>Приоритет</Catalog>
 			<Catalog>Причина</Catalog>
+			<Catalog>Проект</Catalog>
 			<Document>Задача</Document>
 			<Report>ОтчетПоЗадачам</Report>
 			<AccumulationRegister>ЗадачиУчетВремени</AccumulationRegister>
