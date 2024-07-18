@@ -43,7 +43,7 @@
 			<Comment/>
 			<ConfigurationExtensionPurpose>AddOn</ConfigurationExtensionPurpose>
 			<KeepMappingToExtendedConfigurationObjectsByIDs>true</KeepMappingToExtendedConfigurationObjectsByIDs>
-			<NamePrefix>Расш1_</NamePrefix>
+			<NamePrefix>mITIL_</NamePrefix>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_17</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
 			<UsePurposes>
@@ -51,8 +51,8 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
-			<Vendor/>
-			<Version/>
+			<Vendor>github.com/DmNep</Vendor>
+			<Version>1.01</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -64,17 +64,22 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>miniITIL</Subsystem>
-			<Role>MiniITIL_Администратор</Role>
-			<Role>MiniITIL_Пользователь</Role>
-			<Role>MiniITIL_Просмотр</Role>
-			<Catalog>База</Catalog>
-			<Catalog>Заказчик</Catalog>
-			<Catalog>Приоритет</Catalog>
-			<Catalog>Причина</Catalog>
-			<Catalog>Проект</Catalog>
-			<Document>Задача</Document>
-			<Report>ОтчетПоЗадачам</Report>
-			<AccumulationRegister>ЗадачиУчетВремени</AccumulationRegister>
+			<Role>mITIL_Администратор</Role>
+			<Role>mITIL_Пользователь</Role>
+			<Role>mITIL_Просмотр</Role>
+			<Catalog>mITIL_База</Catalog>
+			<Catalog>mITIL_Заказчик</Catalog>
+			<Catalog>mITIL_Приоритет</Catalog>
+			<Catalog>mITIL_Причина</Catalog>
+			<Catalog>mITIL_Проект</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Document>mITIL_Задача</Document>
+			<Enum>mITIL_Права</Enum>
+			<Report>mITIL_ОтчетПоЗадачам</Report>
+			<DataProcessor>mITIL_НастройкаПрав</DataProcessor>
+			<InformationRegister>mITIL_ПраваПользователей</InformationRegister>
+			<InformationRegister>mITIL_Исполнители</InformationRegister>
+			<AccumulationRegister>mITIL_ЗадачиУчетВремени</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

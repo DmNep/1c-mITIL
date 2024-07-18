@@ -16,13 +16,22 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЗадачиУчетВремени</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоЗадачам</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.Задача</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Заказчик</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.База</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Приоритет</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Причина</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.mITIL_ЗадачиУчетВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.mITIL_ОтчетПоЗадачам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.mITIL_Задача</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.mITIL_Заказчик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.mITIL_База</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.mITIL_Приоритет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.mITIL_Причина</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.mITIL_ПраваПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.mITIL_НастройкаПрав</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.mITIL_Права</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.mITIL_Проект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.mITIL_Просмотр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.mITIL_Пользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.mITIL_Администратор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.mITIL_Исполнители</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
